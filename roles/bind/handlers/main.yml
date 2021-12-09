@@ -1,0 +1,6 @@
+---
+# handlers file for bind9
+- name: restart named
+  service:
+    name: named
+    state: restarted

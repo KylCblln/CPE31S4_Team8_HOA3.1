@@ -1,0 +1,5 @@
+---
+# vars file for bind9
+domain: pa.jhbcomputers.com
+
+rev_domain: 30.1.10.in-addr.arpa
