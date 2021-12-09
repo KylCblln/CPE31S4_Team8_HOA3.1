@@ -1,13 +1,13 @@
 ---
 # tasks file for vsftpd
-- name: Installing VSFTPD (Ubuntu)
+- name: Installing VSFTPD(Ubuntu)
   apt:
    name: vsftpd
    state: latest
    update_cache: yes
   when: ansible_distribution == "Ubuntu"
 
-- name: Installing VSFTPD (CentOS)
+- name: Installing VSFTPD(CentOS)
   dnf:
    name: vsftpd
    state: latest
