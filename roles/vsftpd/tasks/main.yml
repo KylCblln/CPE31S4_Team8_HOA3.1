@@ -1,18 +1,15 @@
 ---
-# tasks file for dhcpd
-
-- name: Installing DHCP(Ubuntu)
+# tasks file for vsftpd
+- name: Installing VSFTPD(Ubuntu)
   apt:
-   name:
-     - dhcp
+   name: vsftpd
    state: latest
    update_cache: yes
   when: ansible_distribution == "Ubuntu"
 
-- name: Installing DHCP(CentOS)
+- name: Installing VSFTPD(CentOS)
   dnf:
-   name: 
-     - dhcp
+   name: vsftpd
    state: latest
    update_cache: yes
   when: ansible_distribution == "CentOS"
