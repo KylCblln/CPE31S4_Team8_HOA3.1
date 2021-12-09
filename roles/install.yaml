@@ -1,0 +1,9 @@
+---
+- name: Set up Bind
+  hosts: 10.1.30.11
+  gather_facts: true
+  user: jhooks
+  become: true
+
+  roles:
+    - bind9
