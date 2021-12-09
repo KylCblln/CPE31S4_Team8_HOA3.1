@@ -3,11 +3,11 @@
 - hosts: appserver
   user: test
   sudo: yes
-  vars: 
+  vars:
     mysql_root_password: passwd
   tasks:
    - name: Install MYSQL
-     yum: 
+     yum:
        name: mariadb_server
        state: present
    - name: Install the Python MySQL Support Libraries
