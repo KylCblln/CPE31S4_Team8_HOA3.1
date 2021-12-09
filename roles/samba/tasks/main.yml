@@ -1,16 +1,8 @@
 ---
 # tasks file for samba
 
-- name: Install samba on CentOS
-  dnf: 
-    name: samba samba-client
-    state: latest
-    update_cache: yes
-  when: ansible_distribution == "CentOS"
-
-- name: Install samba on Ubuntu 
-  apt: 
+- name: Install samba for Ubuntu and CentOS
+  package:
     name: samba
     state: latest
-    update_cache: yes
-  when: ansible_distribution == "Ubuntu"  
+    update_cache: yes  
