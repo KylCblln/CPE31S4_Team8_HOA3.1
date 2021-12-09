@@ -16,3 +16,5 @@
 - name: Set hostname
   hostname:
     name: Group8
+
+#sample
