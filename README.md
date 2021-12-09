@@ -12,7 +12,7 @@ Procedure
 
 2. In the group's directory, we made an inventory of the machines' IP addresses.
 
-3.0 The group established a new directory called "Roles."
+3. The group established a new directory called "Roles."
 
 4. The group was able to construct roles for each service within the newly created roles directory.
 
